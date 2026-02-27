@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.spliceforms</groupId>
+  <artifactId>stitch-processing</artifactId>
+  <version>2.0.50-SNAPSHOT</version>
+
+  <properties>
+    <!--
+      STEP 2: This is the property the auto-PR bumps.
+      The GitHub Actions workflow runs:
+        mvn versions:set-property -Dproperty=stitch.jbi.version -DnewVersion=2.0.138
+      which changes 2.0.137 → 2.0.138 and opens a PR with that change.
+    -->
+    <stitch.jbi.version>2.0.137</stitch.jbi.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.spliceforms</groupId>
+      <artifactId>stitch-jbi-interface</artifactId>
+      <version>${stitch.jbi.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.spliceforms</groupId>
+      <artifactId>stitch-jbi-hdfc</artifactId>
+      <version>${stitch.jbi.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+</project>

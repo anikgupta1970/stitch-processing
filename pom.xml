@@ -13,8 +13,8 @@
         mvn versions:set-property -Dproperty=stitch.jbi.version -DnewVersion=2.0.138
       which changes 2.0.137 → 2.0.138 and opens a PR with that change.
     -->
-    <stitch.jbi.version>2.0.137</stitch.jbi.version>
-      <stitch.jbi.interface.version>1</stitch.jbi.interface.version>
+    <stitch.jbi.version>0</stitch.jbi.version>
+      <stitch.jbi.interface.version>0</stitch.jbi.interface.version>
   </properties>
 
   <dependencies>
